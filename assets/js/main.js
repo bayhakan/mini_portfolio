@@ -3,18 +3,18 @@ const tabs = document.querySelectorAll("[data-target]"),
     tabContents = document.querySelectorAll("[data-content]")
 
 tabs.forEach(tab =>{
-    tab.addEventListener("click", () =>{
-        const target =document.querySelector(tab.CDATA_SECTION_NODE.target)
+    tab.addEventListener('click', () =>{
+        const target =document.querySelector(tab.dataset.target)
 
         tabContents.forEach(tc =>{
-            tc.classList.remove("filters_Active")
+            tc.classList.remove('filters_active')
         })
-        target.classList.add("filters_active")
+        target.classList.add('filters_active')
 
-        tab.forEach(t =>{
-            t.classList.remove("filter-tab-active")
+        tabs.forEach(t =>{
+            t.classList.remove('filter-tab-active')
         })
-        tab.classList.add("filter-tab-active")
+        tab.classList.add('filter-tab-active')
     })
 })
 
@@ -60,7 +60,7 @@ sr.reveal(".profile_border")
 sr.reveal(".profile_name", {delay: 500})
 sr.reveal(".profile_profession", {delay: 600})
 sr.reveal(".profile_social", {delay: 700})
-sr.reveal(".profile_info-group", {internal: 100, delay: 700})
+sr.reveal(".profile_info-group", {interval: 100, delay: 700})
 sr.reveal(".profile_buttons", {delay: 800})
 sr.reveal(".filters-content", {delay: 900})
 sr.reveal(".filters", {delay: 1000})
