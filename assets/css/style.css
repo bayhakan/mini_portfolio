@@ -30,9 +30,9 @@
     --body-font: "Poppins", sans-serif;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
 }
 
 @media screen and (min-width: 968px) {
@@ -40,8 +40,8 @@
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
         --normal-font-size: 1rem;
-        --small-font-size: 0.875rem;
-        --smaller-font-size: 0.813rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
     }
 }
 
@@ -262,7 +262,7 @@ body.dark-theme {
     box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
 }
 
-.buttom i {
+.button i {
     font-size: 1.25rem;
 }
 
@@ -270,7 +270,7 @@ body.dark-theme {
     background-color: var(--first-color-alt);
 }
 
-.buttom_small {
+.button_small {
     padding: .75rem;
     box-shadow: none;
 }
@@ -403,11 +403,11 @@ body.dark-theme {
 }
 
 .skills_level {
-    font-size: var(--small-font-size);
+    font-size: var(--smaller-font-size);
 }
 
 /* Hide and show projects & skills */
-.filters[data-content] {
+.filters [data-content] {
     display: none;
 }
 
@@ -494,7 +494,7 @@ body.dark-theme {
 }
 
 /* For large devices */
-@media scrren and (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .container {
         margin-left: auto;
         margin-right: auto;
@@ -540,7 +540,7 @@ body.dark-theme {
         column-gap: 2rem;
     }
 
-    .project_content {
+    .projects_content {
         gap: 2rem 3rem;
     }
 
